@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    排序可以根据任意的比较标准有意义地进行，只要这些标准满足<strong>总</strong>排序关系的数学要求。为了弄懂这个概念，让我们定义一个正整数的古怪排序关系：对于任意两个整数，不管它们的大小和其他位数如何，都认为包含数字 9 的次数多的那个更大。
+</p>
+
+<p style="text-align: justify;">
+    例如 <code>99> 123456789> 10<sup>10</sup></code>在这种排序中。如果两个整数包含数字 9 的次数相同，则比较到下一个较小的数字 8，依此类推，直到发现第一个可区分的数字。如果两个整数包含从 9 到 0 的每一位数的次数相同，那么<strong>普通的整数顺序</strong>比较就能确定它们的相互顺序。 
+</p>
+
+<p style="text-align: justify;">
+    您的目标是根据这一规则对给定的整数序列进行升序排序。让我们看看<code>[111, 19, 919, 1199, 911, 999]</code> 输入的其他示例。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}ordinary-cardinals.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong> {% if is_js %}数组{% else %}列表{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span>的整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p> 
+
+<p>
+   <strong>输出：</strong> {% if is_js %}数组{% else %}列表{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span>的整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>举例说明：</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>该任务取自<span>Python CCPS 109</span> 。它是由<span>Ryerson Chang School of Continuing Education</span> 教授的。<a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
