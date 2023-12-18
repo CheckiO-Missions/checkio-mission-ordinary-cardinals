@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Eine Sortierung kann sinnvollerweise nach beliebigen Vergleichskriterien durchgeführt werden, solange diese Kriterien die mathematischen Anforderungen einer <strong>totalen Ordnungsrelation</strong> erfüllen. Um mit diesem Konzept zu spielen und es zu verstehen, lassen Sie uns eine verrückte Ordnungsrelation positiver ganzer Zahlen definieren, so dass für zwei beliebige ganze Zahlen diejenige, die die Ziffer 9 öfter enthält, als größer angesehen wird, unabhängig vom Betrag und den anderen Ziffern dieser Zahlen.
+</p>
+
+<p style="text-align: justify;">
+    Zum Beispiel, <code>99> 123456789> 10<sup>10</sup></code> in dieser Reihenfolge. Wenn beide Zahlen die Ziffer 9 gleich oft enthalten, wird der Vergleich mit der nächstniedrigeren Ziffer 8 fortgesetzt, und so weiter, bis die erste Unterscheidungsziffer gefunden ist. Wenn beide Zahlen paarweise jede Ziffer von 9 bis 0 gleich oft enthalten, bestimmt der <strong>gewöhnliche</strong> Vergleich der <strong>Zahlenreihenfolge</strong> ihre gegenseitige Anordnung. 
+</p>
+
+<p style="text-align: justify;">
+    Ihr Ziel ist es, eine gegebene Folge von ganzen Zahlen nach dieser Regel in aufsteigender Reihenfolge zu sortieren. Sehen wir uns ein weiteres Beispiel für die Eingabe <code>[111, 19, 919, 1199, 911, 999]</code> an.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}ordinary-cardinals.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> {% if is_js %}Array{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> von ganzen Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p> 
+
+<p>
+   <strong>Ausgabe:</strong> {% if is_js %}Array{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> von ganzen Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>Die Aufgabe wurde von <span>Python CCPS 109</span> übernommen. Sie wird für <span>Ryerson Chang School of Continuing Education</span> von <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
