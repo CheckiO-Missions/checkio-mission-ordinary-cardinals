@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Le tri peut être effectué de manière significative selon des critères de comparaison arbitraires, tant que ces critères satisfont aux exigences mathématiques d'une relation d'<strong>ordre totale</strong>. Pour jouer avec ce concept et le comprendre, définissons une relation d'ordre farfelue entre des nombres entiers positifs, de sorte que pour deux nombres entiers quelconques, celui qui contient le chiffre 9 plus de fois est considéré comme le plus grand, indépendamment de la magnitude et des autres chiffres de ces nombres.
+</p>
+
+<p style="text-align: justify;">
+    Par exemple, <code>99> 123456789> 10<sup>10</sup></code> dans cet ordre. Si les deux nombres entiers contiennent le chiffre 9 le même nombre de fois, la comparaison passe au chiffre immédiatement inférieur, 8, et ainsi de suite jusqu'à ce que le premier chiffre distinctif ait été découvert. Si les deux nombres entiers contiennent tous les chiffres de 9 à 0 le même nombre de fois, la comparaison <strong>ordinaire</strong> de l'<strong>ordre des nombres entiers</strong> détermine leur ordre mutuel. 
+</p>
+
+<p style="text-align: justify;">
+    Votre objectif est de trier une séquence donnée d'entiers selon cette règle, dans l'ordre croissant. Voyons un autre exemple pour l'entrée <code>[111, 19, 919, 1199, 911, 999]</code>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}ordinary-cardinals.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> {% if is_js %}Tableau{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> d'entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p> 
+
+<p>
+   <strong>Sortie:</strong> {% if is_js %}Tableau{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> d'entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>La mission est extraite de <span>Python CCPS 109</span>. Elle est enseignée à <span>Ryerson Chang School of Continuing Education</span> par <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
