@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Сортування можна виконувати за довільними критеріями порівняння, якщо ці критерії задовольняють математичним вимогам повного відношення <strong>впорядкування</strong>. Щоб погратися з цією концепцією, давайте визначимо дивакувате відношення впорядкування натуральних чисел так, що для будь-яких двох цілих чисел, те з них, яке містить цифру 9 більше разів, вважається більшим, незалежно від величини та інших цифр цих чисел.
+</p>
+
+<p style="text-align: justify;">
+    Наприклад, <code>99> 123456789> 10<sup>10</sup></code> у такому порядку. Якщо обидва числа містять цифру 9 однакову кількість разів, порівняння переходить до наступної молодшої цифри 8, і так далі, доки не буде знайдено першу відмінну цифру. Якщо обидва числа містять кожну цифру від 9 до 0 попарно однакову кількість разів, то <strong>звичайне</strong> порівняння <strong>порядку цілих чи</strong> сел визначає їх взаємний порядок. 
+</p>
+
+<p style="text-align: justify;">
+    Ваша задача - відсортувати задану послідовність цілих чисел за цим правилом у порядку зростання. Розглянемо додатковий приклад для вхідних даних <code>[111, 19, 919, 1199, 911, 999]</code>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}ordinary-cardinals.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> {% if is_js %}Масив{% else %}Список{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> цілих чисел <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p> 
+
+<p>
+   <strong>Вивести:</strong> {% if is_js %}Масив{% else %}Список{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> цілих чисел <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>Завдання взято з сайту <span>Python CCPS 109</span>. Викладається для <span>Ryerson Chang School of Continuing Education</span> за допомогою <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
